@@ -17,6 +17,10 @@ let sessionMiddleware = session({
     saveUninitialized: true
 });
 
+io.use((socket,next)=>{
+    sessionMiddleware(socket.request,socket.request.res,next);
+});
+
 //acomodar
 app.use(sessionMiddleware);
 app.use(bodyParser.urlencoded({extended: false}))
