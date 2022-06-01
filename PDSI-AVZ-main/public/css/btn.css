@@ -1,0 +1,13 @@
+.btnenv{
+    text-align: center;
+    background-color: aliceblue;
+    size: 50px;
+    width: 200px;
+    height: 30px;
+}
+.btnagr{
+    background-color: red;
+    size: 30px;
+    width: 100px;
+    height: 30px;
+}

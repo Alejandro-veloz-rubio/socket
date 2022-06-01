@@ -1,0 +1,24 @@
+html
+    head
+        title Inicio de sesion usuarios
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/examples/sign-in/signin.css")
+        meta(name="theme-color" content="#7952b3")
+    body(class="text-center text-white bg-dark" anx="4C")
+    main(class="form-signin")
+        form(action="/auth" method="post")
+            div
+                    input(
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="floatingInput"
+                        name="username")
+                    p Username
+            div
+                input(type="password" class="form-control form-control-lg" id="floatingPassword" name="pass")
+                p Contraseña
+            button(class="w-100 btn btn-lg btn-primary" type="submit" name="sign_in") Iniciar sesión
+            div 
+                form(action="/registro" method="get")
+                div 
+                button(class="w-100 btn btn-lg btn-warning" type="submit" name="registro") Registrarme
