@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    const io = require('socket.io');
     var socket = io();
 
     $.post("/getsal",function(data){
